@@ -1,0 +1,56 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/display-name": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "semi": [2, "always"],
+    "quotes": [2, "single", {
+      "avoidEscape": true
+    }],
+    "no-console": "off",
+    "camelcase": [2, {
+      "properties": "always"
+    }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-unused-vars": "error",
+    "no-dupe-keys": "error",
+    "import/no-unresolved": "off",
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "react/prop-types": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src", "node_modules"]
+      }
+    }
+  }
+}

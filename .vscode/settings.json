@@ -1,0 +1,39 @@
+{
+  "files.exclude": {
+    "**/*.map": {
+      "when": "$(basename)"
+    },
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.tmp": true,
+    "**/bin/**": true,
+    "**/obj/**": true
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "eslint.options": {
+    "experimentalDecorators": true
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "typescriptHero.imports.organizeOnSave": true,
+  "typescriptHero.imports.ignoredFromRemoval": [
+    "react",
+    "settings"
+  ],
+}
