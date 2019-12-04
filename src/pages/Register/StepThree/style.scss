@@ -1,0 +1,47 @@
+.select-skills {
+  .slots {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    padding: 4px 0;
+
+    .slots__item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 4px 0;
+
+      .image {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        margin-right: 10px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        display: block;
+        transition: 0.2s;
+        background-size: cover !important;
+        background-position: center !important;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .skill {
+        width: 100%;
+      }
+    }
+  }
+
+  .skills-images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    img {
+      border: 1px solid white;
+      border-radius: 4px;
+      width: 46px;
+    }
+  }
+}
