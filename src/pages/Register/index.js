@@ -209,6 +209,10 @@ const Register = memo(() => {
 
   return (
     <div className='register'>
+      <div className='register__logo'>
+        <img src='/images/logos/logo.png' alt='Logo' />
+      </div>
+
       <div className='register__step'>
         <Steps>
           <Step status={step >= 1 ? 'finish' : 'wait'} title='Credenciais' icon={<Icon type='form' />} />
@@ -288,6 +292,10 @@ const Register = memo(() => {
             }
           </div>
         </Form.Item>
+      </div>
+
+      <div className='register__by'>
+        power by <span className='c-blue'>Atox Group</span>
       </div>
     </div>
   );
